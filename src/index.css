@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-primary-900 text-secondary-50 font-body;
+}
+
+.app-default {
+  @apply w-full px-4 py-12 md:px-6 lg:px-12 lg:py-16 flex justify-center flex-col items-center;
+}
+
+.app-center {
+  @apply w-full h-dvh flex justify-center items-center flex-col;
+}
+
+.w-full-minus-padding {
+  width: calc(100% - 32px);
+}
+
+.form-controls {
+  @apply w-full flex flex-col gap-7;
+}
+
+.form-control {
+  @apply w-full flex flex-col gap-1.5;
+}
+
+.form-control-label {
+  @apply block text-secondary-100 text-base;
+}
+
+.title {
+  @apply w-full text-2xl font-medium font-display tracking-tighter text-secondary-50;
+}
+
+.btn {
+  @apply w-full py-3 px-6 bg-transparent rounded-md text-base font-semibold transition-all hover:opacity-95 active:translate-y-[2px];
+}
+
+.btn-primary {
+  @apply bg-b-yellow text-primary-900 font-bold;
+}
+
+.btn-secondary {
+  @apply bg-primary-800 text-b-yellow;
+}
